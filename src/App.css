@@ -267,8 +267,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	border-color: transparent;
 }
 
-/************ Anime CSS ************/
-.anime-character{
+/************ Pokemon CSS ************/
+.pokemon-character{
   background: linear-gradient(90.21deg, #22b8ac -5.91%, #3415c0 111.58%);
 }
 
