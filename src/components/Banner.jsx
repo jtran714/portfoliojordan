@@ -44,7 +44,18 @@ export const Banner = () => {
     };
 
   return (
-    <div>Banner</div>
+    <section className='banner' id='home'>
+        <Container>
+            <Row className='align-items-center'>
+                <Col xs={12} md={6} xl={7}>
+                    <div className='animate__animated animate__fadeIn'>
+                        <span className='tagline'>Welcome to my page!</span>
+                        <h1>{`Hi, I'm Jordan Tran,`} <span className='txt-rotate' data-period='1000' data-rotate={JSON.stringify(toRotate)}><span className='wrap'>{text}</span></span></h1>
+                    </div>
+                </Col>
+            </Row>
+        </Container>
+    </section>
   )
 }
 
