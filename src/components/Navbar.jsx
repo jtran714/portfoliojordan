@@ -72,7 +72,6 @@ export const NavBar = () => {
                 <a href="https://www.linkedin.com/in/jordantran714/">
                     <CiLinkedin className="display-1" />
                 </a>
-                
                 <a href="https://docs.google.com/document/d/199aecPJrWbmR0e6ujgzhQ_vbardElXNPQCsj8WbK_rY/edit?usp=sharing">
                   <PiFileDoc className="display-1" />
                 </a>
