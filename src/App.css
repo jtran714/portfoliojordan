@@ -14,7 +14,104 @@
 	font-weight: 400;
 }
 
+/************ main css styling ************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 75px;
+}
+
+body {
+  font-weight: 400;
+  overflow-x: hidden;
+  position: relative;
+  background-color: #121212 !important;
+  color: #fff !important;
+  font-family: 'Centra', sans-serif !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+}
+
+p, a, li, button, ul {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+button {
+  border: 0;
+  background-color: transparent;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+}
+
+.item .icon-container img[src*="django"] {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* To maintain aspect ratio */
+}
+
+.item {
+  width: 350px;
+  height: 350px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.item .icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.item img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+@media (min-width:1700px) {
+	main .container {
+		max-width: 100%;
+		padding: 0 150px;
+	}
+}
+
+p.success {
+	color: green;
+}
+
+p.danger {
+	color: red;
+}
+
+/************ Navbar styling ************/
 .profile-pic{
   width: 100px; /* Set your desired width */
   height: 100px; /* Set your desired height */
@@ -169,4 +266,118 @@ height: 2px;
 }
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 border-color: transparent;
+}
+
+/************ Pokemon Styling ************/
+.pokemon-character{
+  background: linear-gradient(90.21deg, #22b8ac -5.91%, #3415c0 111.58%);
+}
+
+/************ Banner Styling ************/
+.banner {
+  margin-top: 0;
+  padding: 260px 0 100px 0;
+  position: relative; 
+}
+
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./assets/img/background.png');
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: blur(8px);
+  -webkit-filter: blur(.5px);
+  z-index: -1; 
+}
+
+.banner img {
+  animation: updown 3s linear infinite;
+  max-width: 100%; 
+  height: auto; 
+  width: auto; 
+  max-height: 465px; 
+  display: block; 
+  margin: 0 auto; 
+}
+
+.banner .tagline {
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  padding: 8px 10px;
+  background: linear-gradient(90.21deg, rgba(51, 40, 204, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  font-size: 20px;
+  margin-bottom: 16px;
+  display: inline-block;
+}
+.banner h1 {
+  font-size: 65px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1;
+  margin-bottom: 20px;
+  display: block;
+}
+.banner p {
+  color: #fff;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  width: 96%;
+  background: linear-gradient(90.21deg, rgba(51, 40, 204, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 768px) {
+  .banner p {
+    font-size: 16px; 
+    width: 100%; 
+    padding: 10px; 
+  }
+}
+
+.linkedin-connect {
+  text-decoration: none;
+}
+
+.banner button {
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 60px;
+  letter-spacing: 0.8px;
+  display: flex;
+  align-items: center;
+}
+.banner button svg {
+  font-size: 25px;
+  margin-left: 10px;
+  transition: 0.3s ease-in-out;
+  line-height: 1;
+}
+.banner button:hover svg {
+  margin-left: 25px;
+}
+.banner img {
+  animation: updown 3s linear infinite;
+}
+@keyframes updown {
+    0% {
+        transform: translateY(-20px);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+}
+.txt-rotate > .wrap {
+  border-right: 0.08em solid #666;
 }
