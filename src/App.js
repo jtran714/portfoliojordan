@@ -1,11 +1,12 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { NavBar } from './components/Navbar';
 
 export default function App() {
   return (
     <div className='App'>
-      {/* <Navbar />
-      <Banner />
+      <NavBar />
+      {/* <Banner />
       <Skills />
       <Projects />
       <Contact />
