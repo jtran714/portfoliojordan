@@ -66,6 +66,27 @@ export const Banner = () => {
                   <span className="wrap">{text}</span>
                 </span>
               </h1>
+              <p>
+                I am a Full-Stack developer with a deep passion for Front-End
+                development. With a strong belief that technology is rapidly
+                evolving, I am constantly seeking new opportunities to expand my
+                skills and knowledge. My goal is to work in a dynamic and
+                challenging environment where I can continue to grow as a
+                developer and contribute to the development of innovative tech
+                solutions. Currently seeking new opportunities to contribute to
+                exciting projects, so let us connect and chat about creating
+                innovative applications together.
+              </p>
+              <a
+                className="linkedin-connect"
+                href="https://www.linkedin.com/in/jordantran714/"
+                target="_blank"
+                rel="nopener noreferrer"
+              >
+                <button>
+                  Let's Connect <ArrowRightCircle size={25} />
+                </button>
+              </a>
             </div>
           </Col>
         </Row>
