@@ -1,19 +1,14 @@
-import { useState, useEffect } from "react";
-import headerImg from "../assets/img/chibimale.png";
+import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
+import headerImg from "../assets/img/chibimale.png";
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState("");
-  const toRotate = [
-    "Front-End Developer",
-    "Full-Stack Developer",
-    "Web Designer",
-    "Pokemon Fan",
-  ];
   const [delta, setDelta] = useState(200 - Math.random() * 100);
+  const toRotate = ["Web Developer", "Web Designer"];
   const period = 1000;
 
   useEffect(() => {
@@ -55,9 +50,9 @@ export const Banner = () => {
         <Row className="align-items-center">
           <Col xs={12} md={6} xl={7}>
             <div className="animate__animated animate__fadeIn">
-              <span className="tagline">Welcome to my page!</span>
+              <span className="tagline">Welcome to my Portfolio!</span>
               <h1>
-                {`Hi, I'm Jordan Tran,`}{" "}
+                {`Hi! I'm Jordan Tran, `}{" "}
                 <span
                   className="txt-rotate"
                   data-period="1000"
@@ -67,31 +62,27 @@ export const Banner = () => {
                 </span>
               </h1>
               <p>
-                I am a Full-Stack developer with a deep passion for Front-End
-                development. With a strong belief that technology is rapidly
-                evolving, I am constantly seeking new opportunities to expand my
-                skills and knowledge. My goal is to work in a dynamic and
-                challenging environment where I can continue to grow as a
-                developer and contribute to the development of innovative tech
-                solutions. Currently seeking new opportunities to contribute to
-                exciting projects, so let us connect and chat about creating
-                innovative applications together.
+                I'm a passionate Full-Stack developer focused on Front-End
+                development. I'm committed to continuous learning and growth in
+                a dynamic tech environment. I'm actively looking for
+                opportunities to collaborate on exciting and innovative
+                projects, so let us connect!
               </p>
               <a
                 className="linkedin-connect"
-                href="https://www.linkedin.com/in/jordantran714/"
+                href=""
                 target="_blank"
-                rel="nopener noreferrer"
+                rel="noopener noreferrer"
               >
                 <button>
-                  Let's Connect <ArrowRightCircle size={25} />
+                  Let’s Connect <ArrowRightCircle size={25} />
                 </button>
               </a>
             </div>
           </Col>
           <Col xs={12} md={6} xl={5}>
             <div className="animate__animated animate__zoomIn">
-                <img src={headerImg} alt="Header Img" />
+              <img src={headerImg} alt="Header Img" />
             </div>
           </Col>
         </Row>

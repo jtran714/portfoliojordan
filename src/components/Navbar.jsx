@@ -2,8 +2,9 @@ import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { HashLink } from "react-router-hash-link";
 import { BrowserRouter as Router } from "react-router-dom";
-import { CiLinkedin } from "react-icons/ci";
+import { IoLogoLinkedin } from "react-icons/io";
 import { PiFileDoc } from "react-icons/pi"
+
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
@@ -25,6 +26,10 @@ export const NavBar = () => {
 
   const onUpdateActiveLink = (value) => {
     setActiveLink(value);
+  };
+
+  const iconHoverStyle = {
+    filter: 'brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%)',
   };
 
   return (
@@ -70,10 +75,10 @@ export const NavBar = () => {
             <span className="navbar-text">
               <div className="social-icon">
                 <a href="https://www.linkedin.com/in/jordantran714/">
-                    <CiLinkedin className="display-1" />
+                    <IoLogoLinkedin style={iconHoverStyle} className="display-6" />
                 </a>
                 <a href="https://docs.google.com/document/d/199aecPJrWbmR0e6ujgzhQ_vbardElXNPQCsj8WbK_rY/edit?usp=sharing">
-                  <PiFileDoc className="display-1" />
+                    <PiFileDoc style={iconHoverStyle} className="display-6" />
                 </a>
               </div>
               <HashLink to="#connect">
