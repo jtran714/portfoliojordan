@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { NavBar } from './components/Navbar';
 import { Banner } from './components/Banner';
 import { Skills } from './components/Skills';
+import { Projects } from './components/Projects';
 
 export default function App() {
   return (
@@ -10,8 +11,8 @@ export default function App() {
       <NavBar />
       <Banner />
       <Skills />
-      {/* <Projects />
-      <Contact />
+      <Projects />
+      {/* <Contact />
       <Pokemon />
       <Footer /> */}
     </div>
