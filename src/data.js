@@ -3,7 +3,6 @@ import {
     SiRedux,
     SiPostgresql,
     SiDjango,
-    SiFastapi,
     SiRabbitmq,
     SiPython,
     SiDocker,
@@ -13,7 +12,8 @@ import {
     SiNodedotjs,
     SiHtml5,
     SiReact,
-    SiCss3
+    SiCss3,
+    SiMongodb,
   } from "react-icons/si";
   
 
@@ -36,62 +36,62 @@ export const skillData = [
     },
     {
       id: 4,
+      skill: <SiTypescript className="display-4" />,
+      name: "TypeScript"
+    },
+    {
+      id: 5,
       skill: <SiPython className="display-4" />,
       name: "Python",
     },
     {
-      id: 5,
+      id: 6,
       skill: <SiTailwindcss className="display-4" />,
       name: "TailwindCSS",
     },
     {
-      id: 6,
+      id: 7,
       skill: <SiReact className="display-4" />,
       name: "React",
     },
     {
-      id: 7,
-      skill: <SiRedux className="display-4" />,
-      name: "Redux",
-    },
-    {
-      id: 8,
-      skill: <SiNodedotjs className="display-4" />,
-      name: "Node.js",
-    },
-    {
-      id: 10,
-      skill: <SiPostgresql className="display-4" />,
-      name: "PostgreSQL",
-    },
-    {
-      id: 11,
-      skill: <SiDjango className="display-4" />,
-      name: "Django",
-    },
-    {
-      id: 12,
-      skill: <SiFastapi className="display-4" />,
-      name: "FastAPI",
-    },
-    {
-      id: 13,
-      skill: <SiRabbitmq className="display-4" />,
-      name: "RabbitMQ,"
-    },
-    {
-      id: 14,
-      skill: <SiDocker className="display-4" />,
-      name: "Docker",
-    },
-    {
-      id: 15,
+      id: 18,
       skill: <SiNextdotjs className="display-4" />,
       name: "Next.js",
     },
     {
-      id: 16,
-      skill: <SiTypescript className="display-4" />,
-      name: "TypeScript"
-    }
+      id: 9,
+      skill: <SiRedux className="display-4" />,
+      name: "Redux",
+    },
+    {
+      id: 10,
+      skill: <SiNodedotjs className="display-4" />,
+      name: "Node.js",
+    },
+    {
+      id: 11,
+      skill: <SiPostgresql className="display-4" />,
+      name: "PostgreSQL",
+    },
+    {
+      id: 12,
+      skill: <SiMongodb className="display-4" />,
+      name: "MongoDB",
+    },
+    {
+      id: 13,
+      skill: <SiDjango className="display-4" />,
+      name: "Django",
+    },
+    {
+      id: 14,
+      skill: <SiRabbitmq className="display-4" />,
+      name: "RabbitMQ,"
+    },
+    {
+      id: 15,
+      skill: <SiDocker className="display-4" />,
+      name: "Docker",
+    },
   ];
