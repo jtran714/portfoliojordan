@@ -70,7 +70,7 @@ export const Banner = () => {
               </p>
               <a
                 className="linkedin-connect"
-                href=""
+                href="https://www.linkedin.com/in/jordantran714/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
