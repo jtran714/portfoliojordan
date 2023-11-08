@@ -30,7 +30,7 @@ export const NavBar = () => {
 
   const iconHoverStyle = {
     filter: 'brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%)',
-  };
+  }; /* to style react icons*/
 
   return (
     <Router>
