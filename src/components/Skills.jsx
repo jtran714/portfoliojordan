@@ -38,12 +38,14 @@ export const Skills = () => {
               <Carousel
                 responsive={responsive}
                 infinite={true}
+                autoPlay={true}
+                autoPlaySpeed={1800}
                 className="owl-carousel owl-theme skill-slider"
               >
                   {skillData.map((skills) => {
                     return (
                       <Col
-                        xs={4}
+                        xs={15}
                         key={skills.id}
                         className="my-md-5 text-center align-items-center"
                       >
