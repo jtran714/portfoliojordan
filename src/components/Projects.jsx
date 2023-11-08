@@ -152,7 +152,7 @@ export const Projects = () => {
                           <p>
                             <b style={{marginRight: '10px'}}>Skills: JavaScript - React - TailwindCSS</b>
                             <a href="https://github.com/jtran714/summary" style={{marginRight: '10px'}} alt='github link'>GitHub</a>
-                            <a href="https://aquamarine-chimera-41f377.netlify.app/" style={{marginRight: '10px'}} alt='summary'>Link for demo</a>
+                            <a href="https://aquamarine-chimera-41f377.netlify.app/" alt='summary'>Link</a>
                           </p>
                         </div>
                       </Tab.Pane>
