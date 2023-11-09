@@ -34,36 +34,36 @@ export const Projects = () => {
 
   const project2 = [
     {
-      title: "placeholder",
-      description: "placeholder",
+      title: "Landing Page",
+      description: "This is what the user will see regardless if they are logged in or not",
       imgUrl: projImg4,
     },
     {
-      title: "placeholder",
-      description: "placeholder",
+      title: "Log In Page",
+      description: "User will see this page when they want to log in or they want to sign up. Users will have many ways to log in using their Google accounts, Discord, ect",
       imgUrl: projImg5,
     },
     {
-      title: "placeholder",
-      description: "placeholder",
+      title: "User Profile Page",
+      description: "Here is where the user can check what posts they've made, who they replied to, and have the ability to delete posts",
       imgUrl: projImg6,
     },
   ];
 
   const project3 = [
     {
-      title: "placeholder",
-      description: "placeholder",
+      title: "User Log In Page",
+      description: "User will see this page when they want to log in or sign up",
       imgUrl: projImg7,
     },
     {
-      title: "placeholders",
-      description: "placeholder",
+      title: "Home Page",
+      description: "Users will be greeted by this page that displays an array of top anime series",
       imgUrl: projImg8,
     },
     {
-      title: "placeholder",
-      description: "placeholdert",
+      title: "Anime Details Page",
+      description: "If a user is interested in a series, they can simply click on the series to read the synopsis and click on any stream link provided",
       imgUrl: projImg9,
     },
   ];
@@ -88,21 +88,22 @@ export const Projects = () => {
                   }
                 >
                   <h2>Projects</h2>
-                  <p>
-                    Here is a selection of the projects that I have created,
+                  <p style={{letterSpacing: 'normal'}}>
+                    Here are the projects that I have created,
                     both on my own and in partnership with skilled people. This
-                    portfolio, represents my ongoing adventure in software
+                    portfolio, represents my ongoing journey in software
                     development. In this comparatively short time, I've accepted
                     a lot of learning chances and have gained knowledge and
-                    insight that have been quite helpful. Every project I work
+                    insight that have been quite helpful. Every project I worked
                     on is a major turning point in my journey through the world
                     of coding, and I have been incredibly satisfied with every
-                    step of the way. I cordially encourage you to investigate
+                    step of the way. I encourage you to investigate
                     these initiatives and, if you have any thoughts, please
-                    share them. Your viewpoint is really helpful to me as I
+                    share them with me. Your viewpoint is really helpful to me as I
                     continue to hone my abilities and broaden my horizons in the
                     field of software development.
-                    <b>Thank you</b>
+                    {' '}
+                    <b style={{letterSpacing: 'normal'}}>Thank you</b>
                   </p>
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
                     <Nav
@@ -150,9 +151,67 @@ export const Projects = () => {
                             <li>Potential for Future Expansion: As AI technology evolves, there is potential for further expansion and enhancement of the project's capabilities to meet the changing needs of users and news consumers.</li>
                           </ul>
                           <p>
-                            <b style={{marginRight: '10px'}}>Skills: JavaScript - React - TailwindCSS</b>
+                            <b style={{marginRight: '10px'}}>Skills: JavaScript - React - TailwindCSS -</b>
                             <a href="https://github.com/jtran714/summary" style={{marginRight: '10px'}} alt='github link'>GitHub</a>
                             <a href="https://aquamarine-chimera-41f377.netlify.app/" alt='summary'>Link</a>
+                          </p>
+                        </div>
+                      </Tab.Pane>
+
+                      <Tab.Pane eventKey='second'>
+                        <div className="animate-on-visible">
+                          <Row>
+                            {project2.map((project2, index) => {
+                              return (
+                                <ProjectCard key={index} {...project2} />
+                              )
+                            })}
+                          </Row>
+                          <div className="project-title">Threads</div>
+                          <p>
+                            A full-stack social media application based on the real Threads application that gained about 100 million sign-ups in less than a week and it dethroned giants like ChatGPT, and TikTok to become the fastest-growing app ever
+                          </p>
+                        </div>
+                        <div className="animate-on-visible">
+                          <ul>
+                            <li>Clerk Authentication: The app implements Clerk authentication for enhanced user security, ensuring that user accounts are protected and user data is kept safe.</li>
+                            <li>User Search and Community Creation: The app offers a user-friendly search functionality that allows users to find other users and communities of interest. Users also have the option to create their own communities, fostering interaction and collaboration.</li>
+                            <li>Thread Creation and Interaction: Users have the ability to create their own "tweets", share their thoughts, and engage with the content by replying to other users' threads. Additionally, users can delete their own threads to manage their content.</li>
+                            <li>Diverse Login Options: The app provides multiple login methods, including popular options such as Google accounts, GitHub accounts, Discord accounts, and more. This flexibility simplifies the onboarding process for users.</li>
+                            <li>Engagement Features: Users can engage with content through features like liking "tweets" to show appreciation and sharing "tweets" to spread the word. These interactions enhance the social experience and help content reach a broader audience.</li>
+                            <li>User Profiles: Each user has a profile where they can showcase their thread posts, community affiliations, and other information, allowing for personalization and connection with other users.</li>
+                          </ul>
+                          <p>
+                            <b style={{marginRight: '10px'}}>Skills: TypeScript - Next.js - TailwindCSS - MongoDB -</b>
+                            <a href="https://github.com/jtran714/threads" style={{marginRight: '10px'}} alt='github link'>GitHub</a>
+                          </p>
+                        </div>
+                      </Tab.Pane>
+
+                      <Tab.Pane eventKey='third'>
+                        <div className="animate-on-visible">
+                          <Row>
+                            {project3.map((project3, index)=> {
+                              return (
+                                <ProjectCard key={index} {...project3} />
+                              )
+                            })}
+                          </Row>
+                          <div className="project-title">Anime Reactor</div>
+                          <p>A full-stack online platform and community for anime and manga enthusiasts. It provides users with the ability to create a personalized list of anime and manga they have watched or read, and track their progress</p>
+                        </div>
+                        <div className="animaate-on-visible">
+                          <ul>
+                            <li>Anime and Manga Details: Users can access detailed information about anime and manga series, including titles, genres, episode or chapter counts, and release dates.</li>
+                            <li>Search Functionality: The platform offers a robust search feature, allowing users to easily find specific anime or manga series by title or other criteria.</li>
+                            <li>Detailed Series Pages: Users can view dedicated pages for each anime or manga series, containing essential details such as a synopsis, ratings, and related media</li>
+                            <li>Streaming Links: For anime series, users can access streaming links to watch episodes directly from the series page, providing a convenient and integrated viewing experience.</li>
+                            <li>Rating System: A rating system is in place, allowing users to rate anime and manga series on a scale from 1 to 10, with 10 being the highest rating and 1 indicating the lowest.</li>
+                            <li>Watchlist and Favorites: Users have the ability to add series to their watchlist, making it easy to track shows they plan to watch or read in the future. Additionally, they can mark series as favorites to showcase their most beloved titles.</li>
+                          </ul>
+                          <p>
+                            <b style={{marginRight: '10px'}}>Skills: Python - JavaScript - FastAPI - React - PostgreSQL - Docker -</b>
+                            <a href="https://github.com/jtran714/anime-reactor" style={{marginRight: '10px'}} alt='github link'>GitHub</a>
                           </p>
                         </div>
                       </Tab.Pane>

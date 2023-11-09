@@ -503,7 +503,7 @@ border-color: transparent;
 
 .proj-imgbx::before {
   content: "";
-  background: linear-gradient(90.21deg, #22b8ac -5.91%, #3415c0 111.58%);
+  background: linear-gradient(90.21deg, #22b8ac -5.91%, #3e1fca 111.58%);
   opacity: 0.85;
   position: absolute;
   width: 100%;
