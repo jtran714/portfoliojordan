@@ -200,7 +200,7 @@ export const Projects = () => {
                           <div className="project-title">Anime Reactor</div>
                           <p>A full-stack online platform and community for anime and manga enthusiasts. It provides users with the ability to create a personalized list of anime and manga they have watched or read, and track their progress</p>
                         </div>
-                        <div className="animaate-on-visible">
+                        <div className="animate-on-visible">
                           <ul>
                             <li>Anime and Manga Details: Users can access detailed information about anime and manga series, including titles, genres, episode or chapter counts, and release dates.</li>
                             <li>Search Functionality: The platform offers a robust search feature, allowing users to easily find specific anime or manga series by title or other criteria.</li>
