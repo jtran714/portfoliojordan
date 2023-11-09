@@ -561,7 +561,7 @@ border-color: transparent;
 }
 
 .contact {
-  background: linear-gradient(90.21deg, #22b8ac -5.91%, #3415c0 111.58%);
+  background: linear-gradient(90.21deg, rgb(7, 10, 27) -5.91%, #2f13ac 111.58%);
   padding: 60px 0 200px 0;
 }
 .contact img {
@@ -646,4 +646,8 @@ border-color: transparent;
 
 .custom-alert .alert-heading {
   font-weight: bold;
+}
+
+.pokemon-character{
+  background: linear-gradient(90.21deg, rgb(7, 10, 27) -5.91%, #2f13ac 111.58%);
 }
