@@ -4,6 +4,7 @@ import { NavBar } from './components/Navbar';
 import { Banner } from './components/Banner';
 import { Skills } from './components/Skills';
 import { Projects } from './components/Projects';
+import { Contact } from './components/Contact';
 
 export default function App() {
   return (
@@ -12,8 +13,8 @@ export default function App() {
       <Banner />
       <Skills />
       <Projects />
-      {/* <Contact />
-      <Pokemon />
+      <Contact />
+      {/* <Pokemon />
       <Footer /> */}
     </div>
   )

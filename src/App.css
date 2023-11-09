@@ -631,3 +631,19 @@ border-color: transparent;
 .contact form button:hover::before {
   width: 100%;
 }
+
+/* styles.css */
+.custom-alert {
+  /* Add your custom styles here */
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+  color: #155724;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.custom-alert .alert-heading {
+  font-weight: bold;
+}

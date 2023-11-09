@@ -95,3 +95,5 @@ export const skillData = [
       name: "Docker",
     },
   ];
+
+  export const formspreeUrl = "https://formspree.io/f/xnqkryrr";
