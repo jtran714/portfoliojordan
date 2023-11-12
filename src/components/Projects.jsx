@@ -89,7 +89,7 @@ export const Projects = () => {
                 >
                   <h2>Projects</h2>
                   <p style={{letterSpacing: 'normal'}}>
-                    Here are the projects that I have created,
+                    Here are some of the projects that I have created,
                     both on my own and in partnership with skilled people. This
                     portfolio, represents my ongoing journey in software
                     development. In this comparatively short time, I've accepted
@@ -97,11 +97,7 @@ export const Projects = () => {
                     insight that have been quite helpful. Every project I worked
                     on is a major turning point in my journey through the world
                     of coding, and I have been incredibly satisfied with every
-                    step of the way. I encourage you to investigate
-                    these initiatives and, if you have any thoughts, please
-                    share them with me. Your viewpoint is really helpful to me as I
-                    continue to hone my abilities and broaden my horizons in the
-                    field of software development.
+                    step of the way.
                     {' '}
                     <b style={{letterSpacing: 'normal'}}>Thank you</b>
                   </p>
