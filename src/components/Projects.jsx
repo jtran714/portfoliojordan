@@ -12,6 +12,9 @@ import projImg6 from "../assets/img/threads3.png";
 import projImg7 from "../assets/img/anime1.png";
 import projImg8 from "../assets/img/anime2.png";
 import projImg9 from "../assets/img/anime3.png";
+import projimg10 from "../assets/img/task1.png";
+import projimg11 from "../assets/img/task2.png";
+import projimg12 from "../assets/img/task3.png";
 
 export const Projects = () => {
   const project1 = [
