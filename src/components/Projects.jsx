@@ -12,9 +12,9 @@ import projImg6 from "../assets/img/threads3.png";
 import projImg7 from "../assets/img/anime1.png";
 import projImg8 from "../assets/img/anime2.png";
 import projImg9 from "../assets/img/anime3.png";
-import projimg10 from "../assets/img/task1.png";
-import projimg11 from "../assets/img/task2.png";
-import projimg12 from "../assets/img/task3.png";
+import projImg10 from "../assets/img/task1.png";
+import projImg11 from "../assets/img/task2.png";
+import projImg12 from "../assets/img/task3.png";
 
 export const Projects = () => {
   const project1 = [
@@ -75,17 +75,17 @@ export const Projects = () => {
     {
       title: "test",
       description: "test",
-      imgUrl: projimg10,
+      imgUrl: projImg10,
     },
     {
       title: "test",
       description: "test",
-      imgUrl: projimg11,
+      imgUrl: projImg11,
     },
     {
       title: "test",
       description: "test",
-      imgUrl: projimg12,
+      imgUrl: projImg12,
     },
   ]
 
@@ -236,9 +236,9 @@ export const Projects = () => {
                       <Tab.Pane eventKey='third'>
                         <div className="animate-on-visible">
                           <Row>
-                            {project3.map((project3, index)=> {
+                            {project4.map((project4, index)=> {
                               return (
-                                <ProjectCard key={index} {...project3} />
+                                <ProjectCard key={index} {...project4} />
                               )
                             })}
                           </Row>
