@@ -71,6 +71,24 @@ export const Projects = () => {
     },
   ];
 
+  const project4 = [
+    {
+      title: "test",
+      description: "test",
+      imgUrl: projimg10,
+    },
+    {
+      title: "test",
+      description: "test",
+      imgUrl: projimg11,
+    },
+    {
+      title: "test",
+      description: "test",
+      imgUrl: projimg12,
+    },
+  ]
+
   useEffect(() => {
     const elementsToAnimate = document.querySelectorAll(".animate-on-visible");
     elementsToAnimate.forEach((element) => {
@@ -214,6 +232,36 @@ export const Projects = () => {
                           </p>
                         </div>
                       </Tab.Pane>
+
+                      <Tab.Pane eventKey='third'>
+                        <div className="animate-on-visible">
+                          <Row>
+                            {project3.map((project3, index)=> {
+                              return (
+                                <ProjectCard key={index} {...project3} />
+                              )
+                            })}
+                          </Row>
+                          <div className="project-title">Anime Reactor</div>
+                          <p>A full-stack online platform and community for anime and manga enthusiasts. It provides users with the ability to create a personalized list of anime and manga they have watched or read, and track their progress</p>
+                        </div>
+                        <div className="animate-on-visible">
+                          <ul>
+                            <li>Anime and Manga Details: Users can access detailed information about anime and manga series, including titles, genres, episode or chapter counts, and release dates.</li>
+                            <li>Search Functionality: The platform offers a robust search feature, allowing users to easily find specific anime or manga series by title or other criteria.</li>
+                            <li>Detailed Series Pages: Users can view dedicated pages for each anime or manga series, containing essential details such as a synopsis, ratings, and related media</li>
+                            <li>Streaming Links: For anime series, users can access streaming links to watch episodes directly from the series page, providing a convenient and integrated viewing experience.</li>
+                            <li>Rating System: A rating system is in place, allowing users to rate anime and manga series on a scale from 1 to 10, with 10 being the highest rating and 1 indicating the lowest.</li>
+                            <li>Watchlist and Favorites: Users have the ability to add series to their watchlist, making it easy to track shows they plan to watch or read in the future. Additionally, they can mark series as favorites to showcase their most beloved titles.</li>
+                          </ul>
+                          <p>
+                            <b style={{marginRight: '10px'}}>Skills: Python - JavaScript - FastAPI - React - PostgreSQL - Docker -</b>
+                            <a href="https://github.com/jtran714/task" style={{marginRight: '10px'}} alt='github link'>GitHub</a>
+                            <a href="task-jtran714.vercel.app" alt='summary'>Link</a>
+                          </p>
+                        </div>
+                      </Tab.Pane>
+
                     </Tab.Content>
                   </Tab.Container>
                 </div>
