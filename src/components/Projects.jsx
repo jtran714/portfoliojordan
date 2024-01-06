@@ -39,17 +39,17 @@ export const Projects = () => {
     {
       title: "Landing Page",
       description: "This is what the user will see regardless if they are logged in or not",
-      imgUrl: projImg4,
+      imgUrl: projImg10,
     },
     {
-      title: "Log In Page",
-      description: "User will see this page when they want to log in or they want to sign up. Users will have many ways to log in using their Google accounts, Discord, ect",
-      imgUrl: projImg5,
+      title: "Board Page",
+      description: "User will see this page when they select a board to view their tasks",
+      imgUrl: projImg11,
     },
     {
-      title: "User Profile Page",
-      description: "Here is where the user can check what posts they've made, who they replied to, and have the ability to delete posts",
-      imgUrl: projImg6,
+      title: "Payment Portal Powered by Stripe",
+      description: "Here is where the user is directed when they want to subscribe to gain unlimited board access",
+      imgUrl: projImg12,
     },
   ];
 
@@ -70,24 +70,6 @@ export const Projects = () => {
       imgUrl: projImg9,
     },
   ];
-
-  const project4 = [
-    {
-      title: "test",
-      description: "test",
-      imgUrl: projImg10,
-    },
-    {
-      title: "test",
-      description: "test",
-      imgUrl: projImg11,
-    },
-    {
-      title: "test",
-      description: "test",
-      imgUrl: projImg12,
-    },
-  ]
 
   useEffect(() => {
     const elementsToAnimate = document.querySelectorAll(".animate-on-visible");
@@ -132,7 +114,7 @@ export const Projects = () => {
                         <Nav.Link eventKey="first">Summary News</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="second">Threads</Nav.Link>
+                        <Nav.Link eventKey="second">Taskit</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
                         <Nav.Link eventKey="third">Anime Reactor</Nav.Link>
@@ -184,23 +166,24 @@ export const Projects = () => {
                               )
                             })}
                           </Row>
-                          <div className="project-title">Threads</div>
+                          <div className="project-title">TaskIt</div>
                           <p>
-                            A full-stack social media application based on the real Threads application that gained about 100 million sign-ups in less than a week and it dethroned giants like ChatGPT, and TikTok to become the fastest-growing app ever
+                            A full-stack application that helps users manage their daily tasks just like trello
                           </p>
                         </div>
                         <div className="animate-on-visible">
                           <ul>
                             <li>Clerk Authentication: The app implements Clerk authentication for enhanced user security, ensuring that user accounts are protected and user data is kept safe.</li>
-                            <li>User Search and Community Creation: The app offers a user-friendly search functionality that allows users to find other users and communities of interest. Users also have the option to create their own communities, fostering interaction and collaboration.</li>
-                            <li>Thread Creation and Interaction: Users have the ability to create their own "tweets", share their thoughts, and engage with the content by replying to other users' threads. Additionally, users can delete their own threads to manage their content.</li>
-                            <li>Diverse Login Options: The app provides multiple login methods, including popular options such as Google accounts, GitHub accounts, Discord accounts, and more. This flexibility simplifies the onboarding process for users.</li>
-                            <li>Engagement Features: Users can engage with content through features like liking "tweets" to show appreciation and sharing "tweets" to spread the word. These interactions enhance the social experience and help content reach a broader audience.</li>
-                            <li>User Profiles: Each user has a profile where they can showcase their thread posts, community affiliations, and other information, allowing for personalization and connection with other users.</li>
+                            <li>Board, Lists, and Cards: Organize projects into boards, break them down into lists, and tasks into cards.</li>
+                            <li>Drag-and-Drop Interface: Easily move cards between lists and boards to update task status or project progress.</li>
+                            <li>Collaboration and Sharing: Using Clerk Authentication, you can share boards with team members or collaborators to work together in real-time.</li>
+                            <li>Activity Tracking and History: Keep track of all changes, and updates made to tasks or projects.</li>
+                            <li>Customizable Workflows: Adapt the workflow to fit specific project requirements or methodologies like agile, scrum, or kanban</li>
                           </ul>
                           <p>
-                            <b style={{marginRight: '10px'}}>Skills: TypeScript - Next.js - TailwindCSS - MongoDB -</b>
-                            <a href="https://github.com/jtran714/threads" style={{marginRight: '10px'}} alt='github link'>GitHub</a>
+                            <b style={{marginRight: '10px'}}>Skills: TypeScript - Next.js - TailwindCSS - PostgreSQL -</b>
+                            <a href="https://github.com/jtran714/task" style={{marginRight: '10px'}} alt='github link'>GitHub</a>
+                            <a href="https://task-jtran714.vercel.app/" alt='summary'>Link</a>
                           </p>
                         </div>
                       </Tab.Pane>
@@ -229,35 +212,6 @@ export const Projects = () => {
                           <p>
                             <b style={{marginRight: '10px'}}>Skills: Python - JavaScript - FastAPI - React - PostgreSQL - Docker -</b>
                             <a href="https://github.com/jtran714/anime-reactor" style={{marginRight: '10px'}} alt='github link'>GitHub</a>
-                          </p>
-                        </div>
-                      </Tab.Pane>
-
-                      <Tab.Pane eventKey='third'>
-                        <div className="animate-on-visible">
-                          <Row>
-                            {project4.map((project4, index)=> {
-                              return (
-                                <ProjectCard key={index} {...project4} />
-                              )
-                            })}
-                          </Row>
-                          <div className="project-title">Anime Reactor</div>
-                          <p>A full-stack online platform and community for anime and manga enthusiasts. It provides users with the ability to create a personalized list of anime and manga they have watched or read, and track their progress</p>
-                        </div>
-                        <div className="animate-on-visible">
-                          <ul>
-                            <li>Anime and Manga Details: Users can access detailed information about anime and manga series, including titles, genres, episode or chapter counts, and release dates.</li>
-                            <li>Search Functionality: The platform offers a robust search feature, allowing users to easily find specific anime or manga series by title or other criteria.</li>
-                            <li>Detailed Series Pages: Users can view dedicated pages for each anime or manga series, containing essential details such as a synopsis, ratings, and related media</li>
-                            <li>Streaming Links: For anime series, users can access streaming links to watch episodes directly from the series page, providing a convenient and integrated viewing experience.</li>
-                            <li>Rating System: A rating system is in place, allowing users to rate anime and manga series on a scale from 1 to 10, with 10 being the highest rating and 1 indicating the lowest.</li>
-                            <li>Watchlist and Favorites: Users have the ability to add series to their watchlist, making it easy to track shows they plan to watch or read in the future. Additionally, they can mark series as favorites to showcase their most beloved titles.</li>
-                          </ul>
-                          <p>
-                            <b style={{marginRight: '10px'}}>Skills: Python - JavaScript - FastAPI - React - PostgreSQL - Docker -</b>
-                            <a href="https://github.com/jtran714/task" style={{marginRight: '10px'}} alt='github link'>GitHub</a>
-                            <a href="task-jtran714.vercel.app" alt='summary'>Link</a>
                           </p>
                         </div>
                       </Tab.Pane>
