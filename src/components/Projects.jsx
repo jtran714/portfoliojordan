@@ -99,7 +99,7 @@ export const Projects = () => {
                     of coding, and I have been incredibly satisfied with every
                     step of the way.
                     {' '}
-                    <b style={{letterSpacing: 'normal'}}>Thank you</b>
+                    
                   </p>
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
                     <Nav
