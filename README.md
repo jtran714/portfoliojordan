@@ -1,4 +1,5 @@
 # portfoliojordan
 
 
-New portfolio in progress.
+portfolio showcasing my recent projects. 
+tech used - react, bootstrap, 
